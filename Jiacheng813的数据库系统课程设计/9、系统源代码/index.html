@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>南农美食检索系统-首页</title>
+
+</head>
+<body>
+<script type="text/javascript">
+function getQueryVariable(variable){
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i=0;i<vars.length;i++) {
+        var pair = vars[i].split("=");
+        if(pair[0] == variable){return pair[1];}
+    }
+    return(false);
+}
+</script>
+<style> body{text-align:center}</style>
+<div style="padding-top:40px; padding-bottom:165px;background-size:100% 130%;background-image: url(qinghuaihe1.jpeg)">
+<h2>
+        <span style="width:100%; font-family:'微软雅黑';font-size: 40px;color:black;
+            padding-top:80px;text-align:center;display:block;">
+            南京美食检索系统-首页
+        </span>
+</h2>
+    <br><br>
+    <button onclick="window.location.href='search_store.php?mode=all'">查看所有店铺</button>
+    <br><br>
+    <button onclick="window.location.href='search_dish.php?mode=all'">查看所有美食</button>
+    <br><br>
+    <button onclick="window.open('search_store.html','_self')">搜索店铺</button>
+    <br><br>
+    <button onclick="window.open('search_dish.html','_self')">搜索美食</button>
+    <br><br>
+    <button onclick="window.open('my_account.php','_self')">我的账号</button>
+    <br><br>
+    <button onclick="window.open('logout.php','_self')">注销登录</button>
+</div>
+</body>
+</html>

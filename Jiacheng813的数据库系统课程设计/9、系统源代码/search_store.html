@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>店铺搜索</title>
+</head>
+<body>
+<style> body{text-align:center}</style>
+<div style="padding-top:40px; padding-bottom:40px;background-size:cover;background-image: url(index_picture1.jpg)">
+<form action="search_store.php" method="post">
+    <h2><p>请至少输入一种关键词：</p></h2>
+    输入店铺名称关键词<br>
+    <input type="text" name="name" value="">
+    <br><br>
+    输入店铺地址关键词<br>
+    <input type="text" name="address" value="">
+    <br><br>
+    输入食物风味关键词<br>
+    <input type="text" name="flavour" value="">
+    <br><br>
+    输入菜品关键词<br>
+    <input type="text" name="special_dish" value="">
+    <br><br>
+    <input type="submit" value="搜索">
+</form>
+<p>点击搜索，寻找同时满足条件的店铺。</p>
+<br>
+<button onclick="window.location.href='index.html'">返回首页</button>
+</div>
+</body>
+</html>

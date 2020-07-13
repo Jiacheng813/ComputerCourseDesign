@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>账号注册</title>
+    <style type="text/css">
+        h2
+        {
+            font-family: "微软雅黑";
+            font-size: 40px;
+            color:white;
+            padding-top: 60px;
+        }
+    </style>
+    <style type="text/css">
+        form
+        {
+            width:100%;
+            height:550px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            background: url(qinghuaihe2.jpg) bottom center no-repeat #efeff4 ;
+            background-size: 100% 130%;
+        }
+    </style>
+</head>
+<body>
+<style> body{text-align:center}</style>
+<form action="register.php" method="post" target="_blank">
+        <h2>
+            账号注册
+        </h2>
+        <p>
+            <span style="color: white; ">用户名(长度不超过30，<br>仅包含英文字母与符号)</span>
+            <br>
+            <input type="text" name="username">
+        </p>
+        <p>
+            <span style="color: white; ">密码(不超过30个字符)</span>
+            <br>
+            <input type="password" name="password">
+        </p>
+        <p>
+            <span style="color: white; ">昵称(不超过20个字符)</span>
+            <br>
+            <input type="text" name="nickname">
+        </p>
+        <p>
+            <span style="color: white; ">生日(格式如"19920105")</span>
+            <br>
+            <input type="text" name="birthdate">
+        </p>
+        <p>
+            <span style="color: white; ">地址(不超过80个字符)</span>
+            <br>
+            <input type="text" name="address">
+        </p>
+        <input type="submit" value="注册">
+        <br><br>
+        <button onclick="window.location.href = 'login.html'">返回登录页面</button>
+
+</form>
+</body>
+</html>
